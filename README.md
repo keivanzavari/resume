@@ -1,11 +1,11 @@
 
 # Open source resume
-This is a fork of the resume presented [HERE][1]
+This is a fork of a resume I liked on github. [Have a look here][1]
 
 ## Featurs
 - Responsive layout
 - Local printing
 - Timeline
 
-[1]: http://51lxui.com/resume/        "Resume link"
+[1]: http://keivanzavari.github.io/resume/        "Resume link"
 
