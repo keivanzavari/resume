@@ -5,6 +5,7 @@
 	.avatar,.info_left { float: left; margin: 0; }
 	.base,.info_right { float: right; }
 	.info_left,.info_right { width: 47%; }
+	.info_left2 { float: left; margin: 0; width: 47%; }
 	.base { width: calc(100% - 190px); width: -moz-calc(100% - 190px); width: -webkit-calc(100% - 190px); }
 	.base span { position: absolute; right: 100px; top: 27px; }
 	.info_timeline dl dt { width: 200px; }
@@ -38,6 +39,7 @@
 	.avatar { float: none; margin: 0 auto; }
 	.base,.info_left,.info_right { float: none; }
 	.info_left,.info_right { width: 100%; }
+	.info_left2 { width: 100%; float: left;}
 	.base { width: 100%; }
 	.base p,.base h2 { text-align: center; }
 	.base span { position: relative; width: 110px; margin: 0 auto; display: block; right: inherit; }
@@ -58,6 +60,7 @@
 
 	/* display none */
 	.button_print { display: none; }
+	.button_home { display: none; }
 
 }
 
