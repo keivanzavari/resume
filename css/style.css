@@ -700,7 +700,7 @@ p.base_desc {
     list-style: none;
     position: relative;
     overflow: hidden;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .info_timeline ul li .dot {
