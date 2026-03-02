@@ -513,11 +513,46 @@ p.base_desc {
     color: #666;
 }
 
+/* Highlights strip */
+.highlights-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 20px 0 0;
+}
+
+.highlight-card {
+    border-left: 3px solid #109d59;
+    padding: 10px 14px;
+    background-color: #fafafa;
+    border-radius: 0 4px 4px 0;
+}
+
+.highlight-number {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #109d59;
+    line-height: 22px;
+}
+
+.highlight-text {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    line-height: 18px;
+    margin-top: 2px;
+}
+
 .information {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 6%;
     width: 100%;
+}
+
+.info_full {
+    grid-column: 1 / -1;
 }
 
 .info_content p {
@@ -735,6 +770,107 @@ p.base_desc {
     background-color: #ddd;
 }
 
+/* Experience section (full-width) */
+.experience-section {
+    grid-column: 1 / -1;
+}
+
+.experience-entry {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.experience-header h3 {
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.experience-location {
+    color: #999;
+    font-size: 13px;
+}
+
+.experience-title {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.experience-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.experience-role {
+    color: #555;
+    font-size: 14px;
+}
+
+.experience-date {
+    color: #999;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.experience-desc {
+    color: #595959;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.experience-bullets {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.experience-bullets li {
+    color: #595959;
+    line-height: 22px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+}
+
+/* Education section */
+.education-section .education-entry {
+    margin-bottom: 18px;
+}
+
+.education-section .education-entry h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.education-section .education-entry p {
+    color: #666;
+    line-height: 22px;
+}
+
+.education-section .education-entry p.desc {
+    color: #999;
+    font-size: 13px;
+}
+
 /* Skills section (bottom-right) */
 .info_skills .skills-subsection {
     margin-bottom: 20px;
@@ -901,6 +1037,52 @@ code {
     .skill-tag {
         font-size: 11px;
         padding: 2px 6px;
+    }
+
+    .experience-entry {
+        page-break-inside: avoid;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+    .experience-desc {
+        line-height: 18px;
+        margin-bottom: 6px;
+    }
+
+    .experience-bullets li {
+        line-height: 18px;
+        margin-bottom: 2px;
+    }
+
+    .experience-header h3 {
+        font-size: 13px;
+    }
+
+    .education-section .education-entry {
+        margin-bottom: 10px;
+    }
+
+    .education-section .education-entry h3 {
+        font-size: 12px;
+    }
+
+    .highlights-strip {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 12px 0 0;
+    }
+
+    .highlight-card {
+        padding: 6px 10px;
+    }
+
+    .highlight-number {
+        font-size: 13px;
+    }
+
+    .highlight-text {
+        font-size: 11px;
     }
 
     *  {

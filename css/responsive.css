@@ -17,6 +17,8 @@
 	.avatar { float: none; margin: 0 auto; }
 	.base { float: none; width: 100%; }
 	.information { grid-template-columns: 1fr; }
+	.experience-header { flex-direction: column; gap: 2px; }
+	.highlights-strip { grid-template-columns: 1fr 1fr; }
 	.base p,.base h2 { text-align: center; }
 	.base span { justify-content: center; }
 	.base span p { text-align: left; }
